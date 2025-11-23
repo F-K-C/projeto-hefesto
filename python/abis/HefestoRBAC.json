@@ -1,0 +1,458 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			}
+		],
+		"name": "aprovarOperacao",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "numeroSerie",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "tipo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "modelo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "estado",
+				"type": "string"
+			}
+		],
+		"name": "registrarItem",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "loteId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "origemDestino",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "modalidade",
+				"type": "string"
+			}
+		],
+		"name": "registrarOperacao",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			}
+		],
+		"name": "reprovarOperacao",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "c",
+				"type": "uint8"
+			}
+		],
+		"name": "setCargo",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "cargoDe",
+		"outputs": [
+			{
+				"internalType": "enum HefestoRBAC.Cargo",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "getHashAt",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			}
+		],
+		"name": "getItem",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes32",
+						"name": "hashItem",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "numeroSerie",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "tipo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "modelo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "estado",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "registradoPor",
+						"type": "address"
+					}
+				],
+				"internalType": "struct HefestoRBAC.Item",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			}
+		],
+		"name": "getOperacao",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "bytes32",
+						"name": "hashItem",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "loteId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "origemDestino",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "modalidade",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "criadoPor",
+						"type": "address"
+					},
+					{
+						"internalType": "enum HefestoRBAC.Status",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "criadoEm",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "decididoEm",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "decididoPor",
+						"type": "address"
+					}
+				],
+				"internalType": "struct HefestoRBAC.Operacao",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			}
+		],
+		"name": "isRegistrado",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "itens",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "hashItem",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "numeroSerie",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "tipo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "modelo",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "estado",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "registradoPor",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "listaHashes",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "listaOperacoes",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "operacoes",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "hashItem",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "loteId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "origemDestino",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "modalidade",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "criadoPor",
+				"type": "address"
+			},
+			{
+				"internalType": "enum HefestoRBAC.Status",
+				"name": "status",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "criadoEm",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "decididoEm",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "decididoPor",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalItens",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalOperacoes",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

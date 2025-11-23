@@ -1,0 +1,270 @@
+/* ============================================================
+   Tema Militar Claro — Projeto Hefesto + Tactical HUD
+   ============================================================ */
+
+/* --- Paleta Militar --- */
+:root {
+    --bg-light: #e3e8d9;       /* fundo principal suave */
+    --bg-box: #d0d7c6;         /* caixas */
+    --olive: #556b2f;          /* verde oliva EB */
+    --olive-dark: #405021;
+    --olive-light: #9fb98a;
+    --sand: #c9b98a;
+    --text-dark: #2d3817;
+}
+
+/* --- Fundo geral --- */
+.stApp, .main, .block-container {
+    background-color: var(--bg-light) !important;
+    color: var(--text-dark) !important;
+}
+
+
+/* ============================================================
+   ::: TACTICAL HUD — Barras Laterais :::
+   ============================================================ */
+
+/* Barra esquerda */
+.hud-left {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 14px;
+    background: linear-gradient(
+        to bottom,
+        var(--olive-dark) 0%,
+        var(--olive) 40%,
+        var(--olive-light) 100%
+    );
+    opacity: 0.25;
+    z-index: 0;
+}
+
+/* Barra direita */
+.hud-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 14px;
+    background: linear-gradient(
+        to bottom,
+        var(--olive-light) 0%,
+        var(--olive) 60%,
+        var(--olive-dark) 100%
+    );
+    opacity: 0.25;
+    z-index: 0;
+}
+
+
+/* ============================================================
+   Títulos
+   ============================================================ */
+h1 {
+    color: var(--olive-dark) !important;
+    font-weight: 800 !important;
+}
+h2, h3 {
+    color: var(--olive) !important;
+}
+
+/* ============================================================
+   Caixas e Upload
+   ============================================================ */
+[data-testid="stFileUploaderDropzone"] {
+    background-color: var(--bg-box) !important;
+    border: 2px dashed var(--olive-dark) !important;
+    color: var(--olive-dark) !important;
+    border-radius: 10px !important;
+}
+
+/* Sucesso / Erro / Alerta */
+.stSuccess, .stError, .stWarning {
+    padding: 12px !important;
+    border-radius: 6px !important;
+}
+
+.stSuccess {
+    background-color: #c9e6b8 !important;
+    color: #1b3610 !important;
+}
+
+.stError {
+    background-color: #e8b4a8 !important;
+    color: #5a130c !important;
+}
+
+.stWarning {
+    background-color: #f0dca3 !important;
+    color: #5a4a12 !important;
+}
+
+/* Inputs */
+.stTextInput > div > div > input {
+    background-color: var(--bg-box) !important;
+    color: var(--text-dark) !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--olive-dark) !important;
+}
+
+/* Botões */
+.stButton > button {
+    background-color: var(--olive) !important;
+    color: white !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--olive-dark) !important;
+    font-weight: bold !important;
+    padding: 0.6rem 1.2rem !important;
+    transition: 0.15s ease-in-out;
+}
+
+.stButton > button:hover {
+    background-color: var(--olive-dark) !important;
+}
+
+/* JSON & blocos internos */
+.stJson, .css-1cpxqw2 {
+    background-color: var(--bg-box) !important;
+    color: var(--text-dark) !important;
+    border-left: 4px solid var(--olive) !important;
+}
+
+/* Separador */
+hr {
+    border: none !important;
+    border-top: 2px solid var(--olive-dark) !important;
+    margin: 2rem 0 !important;
+}
+
+
+/* ============================================================
+   Ajuste apenas da tabela — sem scroll, sem quebras feias
+   ============================================================ */
+
+/* Força layout limpo e sem barras */
+.stTable {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;  /* Ajusta as larguras */
+}
+
+/* Cabeçalho */
+.stTable th {
+    background-color: var(--olive) !important;
+    color: white !important;
+    padding: 10px !important;
+    font-size: 15px !important;
+    white-space: nowrap !important;
+}
+
+/* Células */
+.stTable td {
+    padding: 10px !important;
+    word-break: break-word !important;    /* Quebra só quando necessário */
+    white-space: normal !important;        /* Evita colunas exageradas */
+    text-align: center !important;
+}
+
+/* Remove rolagem vertical adicionada pelo Streamlit */
+[data-testid="stTable"] div {
+    overflow: visible !important;
+}
+
+/* Alternância de linhas */
+.stTable tr:nth-child(odd) {
+    background-color: #eef2e6 !important;
+}
+
+.stTable tr:nth-child(even) {
+    background-color: #f6f8f1 !important;
+}
+
+/* Colunas longas: Hash e Endereço ganham fonte menor */
+.stTable td:nth-child(1),
+.stTable td:nth-child(7) {
+    font-size: 13px !important;
+    word-break: break-all !important;
+}
+
+/* ============================================================
+   MELHORIA VISUAL — TABELA DO INVENTÁRIO (ST.table)
+   ============================================================ */
+
+/* Contêiner geral da tabela */
+table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+    background: #f2f5eb !important; /* verde claro suave */
+    border: 2px solid var(--olive-dark) !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+/* Cabeçalho */
+thead tr th {
+    background: var(--olive) !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    padding: 14px 10px !important;
+    font-size: 15px !important;
+    text-align: center !important;
+    border-right: 1px solid #3b4a21 !important;
+}
+
+thead tr th:last-child {
+    border-right: none !important;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(odd) {
+    background: #eef2e3 !important;
+}
+
+tbody tr:nth-child(even) {
+    background: #e3e8d9 !important;
+}
+
+/* Destaque na coluna do índice (0, 1, 2...) */
+tbody tr td:first-child {
+    background: #4e6127 !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    width: 40px !important;
+}
+
+/* Células */
+td {
+    padding: 10px 12px !important;
+    font-size: 14.5px !important;
+    color: var(--text-dark) !important;
+    border-right: 1px solid #cbd3b8 !important;
+    vertical-align: middle !important;
+}
+
+/* Última coluna sem borda */
+td:last-child {
+    border-right: none !important;
+}
+
+/* Colunas específicas maiores */
+th:nth-child(3), td:nth-child(3) { width: 120px !important; } /* Tipo */
+th:nth-child(4), td:nth-child(4) { width: 130px !important; } /* Modelo */
+th:nth-child(5), td:nth-child(5) { width: 110px !important; } /* Estado */
+
+
+/* ============================================================
+   CORREÇÃO: AUMENTAR A COLUNA DO HASH
+   ============================================================ */
+
+/* Aumenta largura mínima da primeira coluna (HASH) */
+[data-testid="stTable"] table th:nth-child(2),
+[data-testid="stTable"] table td:nth-child(2) {
+    min-width: 260px !important;
+    max-width: 260px !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
