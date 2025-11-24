@@ -257,22 +257,27 @@ http://localhost:8501
 
 # 📜 8. Screenshots
 
-Telas do sistema:
-
-
 1- Inventário
+
+
 ![alt text](image.png)
 
 
 2- Operações logísticas
+
+
 ![alt text](image-1.png)
 
 
 3- Consultas Rápidas (Hashes)
+
+
 ![alt text](image-2.png)
 
 
 4- Aprovação Militar
+
+
 ![alt text](image-3.png)
 
 
