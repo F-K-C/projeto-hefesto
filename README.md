@@ -242,7 +242,7 @@ http://localhost:8501
 ### Operações Logísticas
 - Criação de operação  
 - Associação origem/destino  
-- Aprovação bilateral  
+- Aprovação bilateral (Potencial)  
 - Finalização automática  
 
 ### Modo Emergência
