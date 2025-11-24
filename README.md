@@ -19,7 +19,7 @@ O sistema foi idealizado para demonstrar:
 
 - Registro imutável de inventário militar  
 - Controle logístico descentralizado  
-- Aprovação dupla entre unidades (origem → destino)  
+- Aprovação dupla entre unidades (origem → destino)  - (Potencial)
 - Auditoria plena de operações  
 - Garantia de integridade com SHA-256  
 - Governança via RBAC militar  
