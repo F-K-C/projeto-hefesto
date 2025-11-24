@@ -259,12 +259,15 @@ http://localhost:8501
 
 Telas do sistema:
 
+4- Aprovação Militar
 1- Inventário
 ![alt text](image.png)
 
+4- Aprovação Militar
 2- Operações logísticas
 ![alt text](image-1.png)
 
+4- Aprovação Militar
 3- Consultas Rápidas (Hashes)
 ![alt text](image-2.png)
 
