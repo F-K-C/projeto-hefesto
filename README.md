@@ -284,7 +284,7 @@ http://localhost:8501
 ---
 
 # 📄 9. Licença
-Projeto acadêmico — licença pendente de definição.
+Projeto acadêmico — Realizado no âmbito da disciplina "Introdução à tecnologia BlockChain e Aplicações descentralizadas".
 
 ---
 
