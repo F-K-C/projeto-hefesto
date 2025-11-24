@@ -38,7 +38,6 @@ PROJETO HEFESTO
 │
 ├── interface/
 │   ├── app_hefesto.py              ← Interface principal Streamlit
-│   ├── app_streamlit.py            ← Versão antiga (não utilizada)
 │   ├── military_theme.css          ← Tema militar personalizado
 │
 ├── python/
