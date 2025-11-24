@@ -258,6 +258,8 @@ http://localhost:8501
 # 📜 8. Screenshots
 *(Adicione quando desejar.)*
 
+![alt text](image.png)
+
 ---
 
 # 📄 9. Licença
