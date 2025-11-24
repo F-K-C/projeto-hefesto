@@ -301,6 +301,7 @@ O Hefesto demonstra como ambientes militares podem adotar blockchain para criar 
 A combinação de:
 - **Solidity** (backend imutável)  
 - **Web3.py** (ponte segura)  
-- **Streamlit** (UI militar)  
+- **Streamlit** (UI militar)
+- **Ganache** - Blockchain privada PoA de teste  
 
 forma um sistema funcional, transparente e aplicável a cenários reais de logística militar.
